@@ -48,11 +48,14 @@ button{
 }
 
 .start{
-  background-color: #424d9b;
+  border: 3px #424d9b solid;
+  background-color: #9ea3c9
+  ;
 }
 
 .end{
-  background-color: #f9503e;
+  border: 3px #f9503e solid;
+  background-color: #d98177;
 }
 
 .valves{

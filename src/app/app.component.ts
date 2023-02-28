@@ -10,10 +10,12 @@ export class AppComponent {
   title = 'HMI-Parcial2';
   paso=0;
   setInter:any;
+  activeStart = false;
 
 
   start(){
     let step = 0;
+    this.activeStart = true;
     this.setInter = setInterval(() => {
       step++;
       this.paso = step;
@@ -26,6 +28,7 @@ export class AppComponent {
 
   end(){
     this.paso = 0;
+    this.activeStart = false;
     clearInterval(this.setInter);
   }
 }

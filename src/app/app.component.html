@@ -15,8 +15,8 @@
   </div>
   <div class="content-process">
     <div class="buttons">
-      <button class="start" (click)="start()">START</button>
-      <button class="end" (click)="end()">STOP</button>
+      <button class="start" [ngClass]="{'start-bg': activeStart}" (click)="start()">START</button>
+      <button class="end" [ngClass]="{'end-bg': !activeStart}" (click)="end()">STOP</button>
     </div>
   </div>
   <app-step1 *ngIf="paso == 0"></app-step1>
