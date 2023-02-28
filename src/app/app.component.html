@@ -2,12 +2,6 @@
   <h1 class="title">Proceso de transporte y llenado de recipientes</h1>
   <span>Oriana Stefany Bautista Iscala C.I:27.675.632</span>
   <span>UNET - Automatización</span>
-  <div class="content-process">
-    <div class="buttons">
-      <button class="start" (click)="start()">Iniciar</button>
-      <button class="end" (click)="end()">Finalizar</button>
-    </div>
-  </div>
   <div class="element">
     <h3>Elementos del sistema</h3>
     <p>
@@ -15,6 +9,15 @@
       dos sensores S1 (Sensor que detecta el recipiente)
       S2 (Sensor de nivel), dos válvulas V1 y V2.
     </p>
+  </div>
+  <div>
+    <h2>Simulación</h2>
+  </div>
+  <div class="content-process">
+    <div class="buttons">
+      <button class="start" (click)="start()">START</button>
+      <button class="end" (click)="end()">STOP</button>
+    </div>
   </div>
   <app-step1 *ngIf="paso == 0"></app-step1>
   <app-step2 *ngIf="paso == 1"></app-step2>
