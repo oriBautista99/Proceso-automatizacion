@@ -1,0 +1,15 @@
+.title{
+  margin: 0;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+h3{
+  margin: 0;
+  text-align: left;
+}
+
+.element{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
